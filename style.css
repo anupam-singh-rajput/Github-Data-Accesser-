@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Segoe UI';
+}
+#wholepage{
+    width: 100%;
+    height: 100%;
+}
+
+/*********************** Upper Section CSS **********************************/
+#upperbody{
+    width: 100%;
+    height: 100vh;
+    background-color: azure;
+    position: relative;
+}
+#profile{
+    width: 80%;
+    height: 80%;
+    /* background-color: whitesmoke; */
+    position: absolute;
+    bottom: 10%;
+    right:10%;
+    border-radius: 20px;
+    transition: 1s ease-in-out;
+    display: flex;
+}
+
+#profile-section{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(6, 84, 101);
+    /* background-color: rgb(197, 208, 211); */
+    border-radius: 20px 0 0 20px;
+    position: relative;
+}
+#profile-picture{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    height: 30%;
+    width: 50%;
+    border-radius: 50%; 
+    border: 3px solid whitesmoke;
+}
+#profile-picture img{
+    
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-size: contain;
+}
+
+#user-info{
+    width: 70%;
+    height: 100%;
+    background-color: rgb(6, 84, 101);
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+#user-name{
+    display: flex;
+    flex-direction: column;
+}
+#user-name h2{
+    width: 100%;
+    height: 70%;
+    align-content: flex-end;
+    /* border: 1px solid black; */
+    /* font-family: 'Segoe UI'; */
+    font-size: 2.5em;
+}
+#user-name input{
+    width: 99%;
+    height: 30%;
+    align-content: flex-start;
+    /* border: 1px solid black; */
+    /* font-family: 'Segoe UI'; */
+    font-size: 1.2em;
+    font-weight: bolder;
+    background-color: rgb(6, 84, 101);
+    border: none;
+    outline: none;
+    cursor: text;
+}
+#user-name input:focus {
+    border: none;
+    outline: none;
+}
+
+#user-bio{
+    width: 90%;
+}
+#user-bio h4{
+    width: 100%;
+    text-align: left;
+    align-content: center;
+    font-size: 1.2em;
+    /* font-family: 'Segoe UI'; */
+}
+
+.stats{
+    width: 21%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.stats h2,h3{
+    /* font-family: 'Segoe UI'; */
+} 
+
+#buttons button{
+    width: 35%;
+    height: 40%;
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    align-content: center;
+    border-radius: 10px;
+    margin-right: 2%;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+.aboutuser{
+    width: 100%;
+    height: 25%;
+    /* border: 1px solid black; */
+}
+/*********************** Lower Section CSS **********************************/
+#lowerbody {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(6, 84, 101);
+} 
+
+.repo-container{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 80%;
+    height: 80%;
+    background-color: azure;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    width: 100%;
+    height: 10%;
+    border: 1px solid black;
+    border-radius: 20px 20px 0px 0px;
+}
+#filter {
+    width: 20%;
+    height: 100%;
+    border-radius: 20px 0px 0px 0px;
+    color: black;
+    font-family: 'Segoe UI';
+    font-size: 1.5em;
+    font-weight: bolder;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+#searchbar{
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 0px 20px 0px 0px;
+    border: none;
+}
+#searchbar input{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 20px 0px 0px;
+    border: none;
+    outline: none;
+    color: black;
+    font-family: 'Segoe UI';
+    font-size: 1.2em;
+    font-weight: bolder;
+    background-color: azure;
+}
+#searchbar input:focus{
+    border: none;
+    outline: none;
+}
+
+.container-body{
+    position:relative;
+    width:100%;
+    height:90%;
+    background-color:azure;
+    padding: 2% 1% 1% 1%;
+    border-radius: 0 0 20px 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.repo{
+   width: 100%;
+   height: 17.5%;
+    background-color: white;
+    border: 1px solid black;
+    /* border-radius: 20px; */
+    margin-bottom: 1%;
+    display: flex;
+} 
+
+.aboutrepo, .repolink{
+    align-content: center;
+    text-align: center;
+}
+
+.aboutrepo{
+    width: 30%;
+    height: 100%;
+    font-family: 'Segoe UI';
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+.repolink a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI';
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: center;
+    align-content: center;
+}

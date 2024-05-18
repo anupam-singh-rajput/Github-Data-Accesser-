@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Search Example</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="searchBar" placeholder="Search in array...">
+    <button onclick="searchArray()">Search</button>
+
+    <ul id="resultList"></ul>
+
+    <script>
+        const dataArray = [
+            "Hello World!",
+            "JavaScript is awesome!",
+            "Welcome to the search bar example.",
+            "Let's find something similar.",
+            "Another item to search."
+        ];
+
+        function searchArray() {
+            let query = document.getElementById('searchBar').value.toLowerCase();
+            let resultList = document.getElementById('resultList');
+            resultList.innerHTML = ''; // Clear previous results
+            let found = false;
+
+            dataArray.forEach(item => {
+                if (item.toLowerCase().includes(query)) {
+                    let listItem = document.createElement('li');
+                    listItem.textContent = item;
+                    listItem.classList.add('highlight'); // Highlight found item
+                    resultList.appendChild(listItem);
+                    found = true;
+                }
+            });
+
+            if (!found) {
+                alert('No matching item found.');
+            }
+        }
+
+        // Optional: Perform search on input
+        document.getElementById('searchBar').addEventListener('input', searchArray);
+    </script>
+</body>
+</html>
